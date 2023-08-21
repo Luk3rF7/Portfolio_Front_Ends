@@ -8,6 +8,10 @@
   <!-- css style -->
   <link rel="stylesheet" href="./frontend/assets/main/style.css">
   <!-- icons libs font-awesome -->
+  <link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -96,61 +100,101 @@
       
     </section>
     <!-- Section mini Projetos -->
-    <section id="mini_projeto" class="container_miniProjeto">
-        <main class="content_miniProjeto">
-          <div class="title_miniProjeto">
-            <h1>Mini Projeto</h1>
-            <h3>
-              Meu mini Projetos Com html,css,javascript
-            </h3>
-          </div>
-          <div class="container_wrap">
-            <!-- card -->
-            <div class="main-content grid-one-content">
-              <div class="grid2">
-                <div class="gallery-img">
-                  <img
-                    src="http://source.unsplash.com/random/360x360?r=1"
-                    alt="random image from unsplash"
-                  />
-                </div>
-                <div class="gallery-img">
-                  <img
-                    src="http://source.unsplash.com/random/360x360?r=2"
-                    alt="random image from unsplash"
-                  />
-                </div>
-                <div class="gallery-img">
-                  <img
-                    src="http://source.unsplash.com/random/360x360?r=3"
-                    alt="random image from unsplash"
-                  />
-                </div>
-                <div class="gallery-img">
-                  <img
-                    src="http://source.unsplash.com/random/360x360?r=4"
-                    alt="random image from unsplash"
-                  />
-                </div>
-                <div class="gallery-img">
-                  <img
-                    src="http://source.unsplash.com/random/360x360?r=5"
-                    alt="random image from unsplash"
-                  />
-                </div>
-                <div class="gallery-img">
-                  <img
-                    src="http://source.unsplash.com/random/360x360?r=6"
-                    alt="random image from unsplash"
-                  />
-                </div>
-              </div>
-            </div>   
-            </div>
-          </main>
-        </main>
+    
+    <div id="mini_projeto"class="container_projetos">
+      <main class="portfolio">
+        <h2 class="heading">
+            Mini 
+            <span>
+              Projetos
+            </span>
+          </h2>
 
-    </section>
+          <div class="container-portfolio">
+
+            <div class="portfolio-container">
+              <div class="portfolio-box">
+                <img src="./frontend/img/portfolio/calculadora.jpg" />
+              <div class="portfolio-layer">
+                <h4>Calculadora</h4>
+                <p>
+                  Uma Calculadora simples que efetua as principais cálculos, matemático<br>
+                  <a href="#"><i class="bx bx-link-external"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-container">
+            <div class="portfolio-box">
+              <img src="./frontend/img/portfolio/todolist.jpg" />
+              <div class="portfolio-layer">
+                <h4>Lista de Tarefas</h4>
+                <p>
+                  Uma lista onde você poderá adiciona sua tarefa diárias e marca como comcluídas
+                  <br>
+                  <a href="#"><i class="bx bx-link-external"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="portfolio-box">
+              <img src="./frontend/img/portfolio/imc.jpg" />
+              <div class="portfolio-layer">
+                <h4>Calculadora IMC</h4>
+                <p>
+                  Uma calculadora onde você vai pode saber se está acima do seu peso ou na média.
+                 <br>
+                  <a href="#"><i class="bx bx-link-external"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="portfolio-box">
+              <img src="./frontend/img/portfolio/Forms-pana.png" />
+              <div class="portfolio-layer">
+                <h4>Formulário</h4>
+                <p>
+                  Formulário onde você Podera fazer simples cadastro 
+                  <br><a href="#"><i class="bx bx-link-external"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="portfolio-box">
+              <img src="./frontend/img/portfolio/Mobile login-rafiki.png" />
+              <div class="portfolio-layer">
+                <h4>Sistema de Login</h4>
+                <p>
+                  Com esse sistema você vai poder fazer login, logout além de verificação de senha
+                 <br> <a href="#"><i class="bx bx-link-external"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container">
+            <div class="portfolio-box">
+              <img src="./frontend/img/portfolio/projetos.png" />
+              <div class="portfolio-layer">
+                <h4>Templates de Site</h4>
+                <p>
+                  Templates básicos de site estáticos efica com html e Css.
+                   <br><a href="#"><i class="bx bx-link-external"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </main>
+    </div>
+
       <footer class="footer">
         <p>
           &copy Lc Developer 
@@ -164,6 +208,9 @@
       </footer>
     </body>
     <!-- -->
-   
+        <!-- custom js -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- typed -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./frontend/assets/js/script.js"></script>
 </html>
