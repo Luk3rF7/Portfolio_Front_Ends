@@ -293,7 +293,6 @@ body::-webkit-scrollbar-thumb {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -309,6 +308,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 800;
   font-size: 1.1em;
   transition: 1s ease;
+  margin:20px
 }
 
 .container_link:hover{
@@ -492,4 +492,40 @@ body::-webkit-scrollbar-thumb {
     top:-210px;
   }
   /* landing pages */
+  .container_lp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content_lp {
+    width: 100%;
+  }
+  .title_lp_img {
+    font-size: 1em;
+    margin:0;
+  }
+  .img_lp {
+    width:30%;
+    top:12px;
+    left:270px;
+  }
+  .title_lp{
+    margin:0 auto;
+  }
+  .content_link_lp{
+    width: 60%;
+    height: 90%;
+    margin: 5px auto;
+    padding: 0;
+    box-shadow: 30px 5px 0 2px rgba(255, 255, 255,.1);
+  }
+  .container_link{
+    margin: 10px;
+    width: 50%;
+    height: 10%;
+  }
+  .container_link:hover{
+    box-shadow: 30px 30px 0 3px rgba(255, 255, 255,.5);
+  }
 }
