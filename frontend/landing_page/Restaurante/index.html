@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante</title>
+      <!-- swiper -slider cdn -->
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- css -->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- font-google -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster&family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;1,6..12,400;1,6..12,700&family=Nunito:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Tilt+Prism&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- header section intro -->
+  <header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>Macarons</a>
+
+    <!-- navegaçção -->
+    <nav class="navbar">
+      <a class="active" href="#home">Inicio</a>
+      <a href="#dishes">Cardapio</a>
+      <a href="#about">Sobre</a>
+      <a href="#menu">menu</a>
+      <a href="#review">Avaliação</a>
+      <a href="#order">Peça já</a>
+    </nav>
+      <!-- icons -->
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icons"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+  </header>
+  <!-- header section end -->
+   <!-- Formulario de  Pesquisa  -->
+  <form  id="search-form">
+    <input type="text" placeholder="Pesquise aqui..." id="search-box">  
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
+    <!-- secton estrela barra menu -->
+    <section class="home" id="home">
+      <!-- container para slider -->
+      <div class="swiper-container home-slide">
+          <!-- base  -->
+          <div class="swiper-wrapper wrapper">
+            <!-- div do slider 1 -->
+            <div class="swiper-slide slide">
+                  <div class="content">
+                    <span>self Service</span>
+                    <h3>
+                      Arroz à grega 
+                    </h3>
+                    <p>
+                      Temos comida tipica da Região, com bom frango assado na grelha 
+                    </p>
+                    <a href="#" class="btn">Peça agora !</a>
+                  </div>
+                  <!-- div img -->
+                  <div class="image">
+                      <img src="./images/home-1.png" alt="especialidade da casa">
+                  </div>
+            </div>
+            <!-- div do slider 2 -->
+            <div class="swiper-slide slide">
+                  <div class="content">
+                    <span>Porções</span>
+                    <h3>Batata frita com Molho</h3>
+                    <p>
+                      Venha experimentar nossas porções, com muita variedade de molhos 
+                      do nosso Chef da Itália.
+                    </p>
+                    <a href="#" class="btn">Peça agora !</a>
+                  </div>
+                  <!-- div img -->
+                  <div class="image">
+                      <img src="./images/home-2.png" alt="especialidade da casa">
+                  </div>
+            </div>
+            <!-- div do slider 3 -->
+            <div class="swiper-slide slide">
+                  <div class="content">
+                    <span>Massa</span>
+                    <h3>Macarrão Com queijo</h3>
+                    <p>
+                      Nosso chef da Itália vem trazendo sua diversa especialidade 
+                      Com Macarrone!
+                    </p>
+                    <a href="#" class="btn">Peça agora !</a>
+                  </div>
+                  <!-- div img -->
+                  <div class="image">
+                      <img src="./images/home-3.png" alt="especialidade da casa">
+                  </div>
+
+            </div>
+          </div>
+            <!-- slide button -->
+            <div class="swiper-pagination"></div>
+      </div>
+    </section>
+      <!-- Prato principais -->
+      <section class="dishes" id="dishes">
+        <h3 class="sub-heading">Cardapio</h3>
+        <h1 class="heading">Prato principais</h1>
+        <!-- box menu dishes -->
+        <div class="box-container">
+           <!-- box icons -->  
+           <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="./images/comida-1.jpg" alt="pizza">
+              <h3>Bruschetta Queijo com Rucula</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <!-- price -->
+              <span>R$ 59,99</span>
+              <a href="#" class="btn">Adicionar Pedido</a>
+          </div>
+      <!-- menu 2 -->  
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="./images/comida-2.jpg" alt="pizza">
+          <h3>Pizza Tradicionais</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- price -->
+          <span>R$ 29,99</span>
+          <a href="#" class="btn">Adicionar Pedido</a>
+      </div>
+      <!-- menu box 3 -->
+            <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="./images/comida-3.jpg" alt="pizza">
+          <h3>Ravioli de Ricota</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- price -->
+          <span>R$ 39,99</span>
+          <a href="#" class="btn">Adicionar Pedido</a>
+      </div>
+      <!-- menu box 4 -->
+            <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="./images/comida-4.jpg" alt="pizza">
+          <h3>Lasanha com Polpetas</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- price -->
+          <span>R$ 39,99</span>
+          <a href="#" class="btn">Adicionar Pedido</a>
+      </div>
+      <!-- menu box 5 -->
+            <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="./images/comida-5.jpg" alt="pizza">
+          <h3>Fettuccine com Molho Marzano </h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- price -->
+          <span>R$ 39,99</span>
+          <a href="#" class="btn">Adicionar Pedido</a>
+      </div>
+      <!-- menu box 6 -->
+            <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="./images/comida-6.jpg" alt="pizza">
+          <h3>Nhoque de Ricota Com Espinafre</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- price -->
+          <span>R$ 39,99</span>
+          <a href="#" class="btn">Adicionar Pedido</a>
+      </div>
+      <!-- menu box 7 -->
+            <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="./images/comida-7.jpg" alt="pizza">
+          <h3>Risoto carbonari</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- price -->
+          <span>R$ 39,99</span>
+          <a href="#" class="btn">Adicionar Pedido</a>
+      </div>
+      <!-- menu box 8 -->
+            <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="./images/comida-8.jpg" alt="pizza">
+          <h3>Tiramisu</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <!-- price -->
+          <span>R$ 39,99</span>
+          <a href="#" class="btn">Adicionar Pedido</a>
+      </div>
+      
+            
+        </div>
+      </section>
+      <!-- Section Sobre -->
+      <section class="about" id="about">
+
+        <h3 class="sub-heading">Sobre Macarons</h3>
+        <h1 class="heading">Por quê Escolher macarons</h1>
+
+        <div class="row">
+
+          <div class="image">
+            <img src="./images/prato-principal.png">
+          </div>
+
+          <div class="content">
+            <h3>Melhores Pratos da Itália</h3>
+            <p>
+              Com mais de 30 anos de Tradição da Familia macarons com 
+              muitas comida tipica da Itália.
+            </p>
+              <p>
+                Nosso Restaurante tem 20 anos,sendo 10 anos de Pizzaria e 
+                self-service com as melhores Massa.
+              </p>
+              <div class="icons-content">
+                <!-- icons -->
+                <div class="icons">
+                  <i class="fas fa-shipping-fast"></i>
+                  <span>
+                    Temos Delivery
+                  </span>
+                </div>
+                <!-- icons -->
+                <div class="icons">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>
+                    Pagementos Ágil
+                  </span>
+                </div>
+                <!-- icons -->
+                <div class="icons">
+                  <i class="fas fa-headset"></i>
+                  <span>
+                      Suport na entrega 24hr
+                  </span>
+                </div>
+              </div>
+              <a href="#" class="btn">Leia mais..</a>
+          </div>
+        </div>
+
+      </section>
+      <!-- menu  -->
+      <section class="menu" id="menu">
+          <h3 class="sub-heading">Especialidade da Casa</h3>
+          <h1 class="heading">Menu</h1>
+          <!-- container -->
+          <div class="box-container">
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-1.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Pizza Sem borda</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-2.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Hamburguer</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-3.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Café da manhã</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-4.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Churrasco</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-5.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Pedaço de bolo</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-6.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Carne ao Molho Itáliano</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-7.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Sushi ao molho</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-8.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Sorvetes gourmet</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 39.99</span>
+                </div>
+              </div>
+            <!-- box - menu  -->
+            <div class="box">
+              <div class="image">
+                <img src="./images/menu-9.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Sucos </h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Aspernatur in dolorum repudiandae atque.
+                  </p>
+                  <a href="#" class="btn">Peça já</a>
+                  <span class="price">R$: 12.99</span>
+                </div>
+              </div>
+            </div>
+      </section>
+      <!-- secion review -->
+      <section class="review" id="review">
+        <h3 class="sub-heading">Avaliações </h3>
+         <h1 class="heading">Analise dos Clientes </h1> 
+
+         <!-- slider- analise -->
+         <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+              <!-- avaliação client 1 -->
+                  <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                      <img src="./images/client.jpg" alt="cliente 1">
+                      <div class="user-info">
+                        <h3>Mary deo</h3>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Frete com preços excelente e comida maravilhosa!
+                    </p>
+                  </div>
+              <!-- avaliação client 1 -->
+                  <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                      <img src="./images/client-2.jpg" alt="cliente 1">
+                      <div class="user-info">
+                        <h3>Josefinas geliquis</h3>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Com suporte a entregas,consigo ter segurança nos pedido!
+                    </p>
+                  </div>
+              <!-- avaliação client 1 -->
+                  <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                      <img src="./images/client-3.jpg" alt="cliente 1">
+                      <div class="user-info">
+                        <h3>Marcos bercio</h3>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Comida excelente para se comer em qualquer lugar !
+                    </p>
+                  </div>
+              <!-- avaliação client 1 -->
+                  <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                      <img src="./images/cliente-4.jpg" alt="cliente 1">
+                      <div class="user-info">
+                        <h3>André marshetsu</h3>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                     com muita variedade de menu,e preparo rapido no pedido! 
+                    </p>
+                  </div>
+              <!-- avaliação client 1 -->
+                  <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                      <img src="./images/cliente-5.jpg" alt="cliente 1">
+                      <div class="user-info">
+                        <h3>Marcelina betrina Silva</h3>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                    uma boa comida típica italiana de qualidade.com preço bom
+                    </p>
+                  </div>
+              <!-- avaliação client 1 -->
+                  <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                      <img src="./images/cliente-6.jpg" alt="cliente 1">
+                      <div class="user-info">
+                        <h3>Pauloceio Felipe</h3>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                    Com entregas rápidas e atendimento ao cliente excelente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+      </section>
+      <!--  section formularo peça agora -->
+      <section class="order" id="order">
+
+        <h3 class="sub-heading">Faça seu Pedido</h3>
+        <h1 class="heading">E ganhe Desconto no frete</h1>
+
+        <form>
+          <!-- inputbox name / number -->
+            <div class="inputBox">
+              <div class="input">
+                <span>Nome:</span>
+                <input type="text" placeholder="Digite seu nome..."></input>
+              </div>
+              <div class="input">
+                <span>Número:</span>
+                <input type="number" placeholder="Digite seu número"></input>
+              </div>
+           </div>
+          <!-- inputbox pedido / adicional -->
+            <div class="inputBox">
+              <div class="input">
+                <span>Seu Pedido</span>
+                <input type="text" placeholder="nome do cardapio"></input>
+              </div>
+              <div class="input">
+                <span>Pedido Adicional</span>
+                <input type="test" placeholder="digite queira adicionar"></input>
+              </div>
+           </div>
+          <!-- inputbox quantidade e data pedido -->
+            <div class="inputBox">
+              <div class="input">
+                <span>Quantidade</span>
+                <input type="number" placeholder="digite sua quantidade"></input>
+              </div>
+              <div class="input">
+                <span>data e hora</span>
+                <input type="datetime-local"></input>
+              </div>
+          <!-- inputbox endereço -->
+            <div class="inputBox">
+              <div class="input">
+                <span>Endereço:</span>
+                <textarea name="" id="" placeholder="digite seu endereço" cols="30" rows="10"></textarea>
+              </div>
+              <div class="input">
+                <span>Digite uma messagem</span>
+                <textarea name="" id="" placeholder="digite um mensagem " cols="30" rows="10"></textarea>
+              </div>
+              <input type="submit" value="Peça Agora" class="btn">
+           </div>
+
+        </form>
+      </section>
+
+      <!-- rodape -->
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>Localização</h3>
+            <a href="#">São Paulo - SP</a>
+            <a href="#">Belo Horizonte - MG</a>
+            <a href="#">Ponta Grossa - PR</a>
+            <a href="#">Copa cabana - RJ</a>
+          </div>
+          <div class="box">
+            <h3>Links </h3>
+            <a href="#home">Home</a>
+            <a href="#dishes">Cardapio</a>
+            <a href="#about">Sobre</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Avaliação</a>
+            <a href="#order">Peça já</a>
+          </div>
+          <div class="box">
+            <h3>Contato info </h3>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i>+1199999-9999</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>+55-11-4224-9449</a>
+            <a href="#"><i class="fa-regular fa-envelope"></i>maracons@itmail.com</a>
+          </div>
+          <div class="box">
+            <h3>Rede Sociais</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Intagram</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+          </div>
+        </div>
+          <div class="credit">
+              &copy; 2023 lc Developer
+          </div>
+      </section>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
