@@ -7,6 +7,7 @@
   <title>Portfolio Frontend</title>
   <!-- css style -->
   <link rel="stylesheet" href="./frontend/assets/main/style.css">
+  <link rel="stylesheet" href="./frontend/assets/main/mediaQerie.css">
   <!-- icons libs font-awesome -->
   <link
   href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -43,44 +44,42 @@
     </header>
 
     <!-- section intro -->
-    <section class="intro">
+  <section class="intro">
 
-      <div class="container_intro" >
+      <div class="container_intro">
 
-        <div class="intro_content">
-
-          <h3>Front end</h3>
-          <h1>Bem vindo !</h1>
-          <h3>Projetos :<br>
-          <span class="text"></span> </h3>
-          <p>Tecnologia utilizada no Front end: </p>
-            
-          <div class="home-sci">
-            <i class='bx bxl-html5'></i>
-            <i class='bx bxl-css3' ></i>
-            <i class='bx bxl-javascript' ></i>
-            <i class='bx bxl-jquery'></i>
+        <div class="intro_box">
+          <div class="heading">
+            <h3>Front end</h3>
+            <h1>Bem vindo !</h1>
+            <h3>Projetos :<br>
+              <span class="text"></span> </h3>
           </div>
-        </div>
 
-        <div class="content_img_intro">
+          <p>Tecnologia utilizada no Front end: </p>
+          
+          <div class="stack">
+            <div class="box-stack">
+              <i class='bx bxl-html5'></i>
+              <i class='bx bxl-css3' ></i>
+              <i class='bx bxl-javascript' ></i>
+              <i class='bx bxl-jquery'></i>
+            </div>
+          </div>       
+            
+        </div>
+        <div class="intro_img">
           <img src="./frontend/img/project_intro.svg" alt="front_end" >
-        </div>
-
       </div>
-      </section>
+      </div>
+    
+  </section>
 
     <!-- section landing page -->
     <section id="landing_page" class="container_lp">
       <!-- cotainer principal  -->
-    
-        
         <div class="content_lp">
-
-          
             <h1>Landing Page</h1>
-          
-
           <div class="img_lp">
             <img src="./frontend/img/undraw_portfolio_re_qwm5.svg" alt="lp_img">
           </div>
@@ -98,19 +97,16 @@
               <div class="box-lp"><a href="./">food</a></div>
               <div class="box-lp"><a href="#">E-Commerce</a></div>
               <div class="box-lp"><a href="./frontend/landing_page/food_page/index.html">Doceria</a></div>
-              <div class="box-lp"><a href="#">web developer</a></div>
-       
-           
-            
+              <div class="box-lp"><a href="#">web developer</a></div>          
           </div>
         </div>
    
       
     </section>
     <!-- Section mini Projetos -->
-    
-    <div id="mini_projeto"class="container_projetos">
-      <main class="portfolio">
+    <section id="mini_projeto">
+      <div class="container_projetos">
+        <main class="portfolio">
         <h2 class="heading">
             Mini 
             <span>
@@ -154,7 +150,7 @@
                 <h4>Calculadora IMC</h4>
                 <p>
                   Uma calculadora onde você vai pode saber se está acima do seu peso ou na média.
-                 <br>
+                  <br>
                   <a href="#"><i class="bx bx-link-external"></i></a>
                 </p>
               </div>
@@ -173,7 +169,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="portfolio-container">
             <div class="portfolio-box">
               <img src="./frontend/img/portfolio/Mobile login-rafiki.png" />
@@ -181,7 +177,7 @@
                 <h4>Sistema de Login</h4>
                 <p>
                   Com esse sistema você vai poder fazer login, logout além de verificação de senha
-                 <br> <a href="#"><i class="bx bx-link-external"></i></a>
+                  <br> <a href="#"><i class="bx bx-link-external"></i></a>
                 </p>
               </div>
             </div>
@@ -194,7 +190,7 @@
                 <h4>Templates de Site</h4>
                 <p>
                   Templates básicos de site estáticos efica com html e Css.
-                   <br><a href="#"><i class="bx bx-link-external"></i></a>
+                  <br><a href="#"><i class="bx bx-link-external"></i></a>
                 </p>
               </div>
             </div>
@@ -202,6 +198,7 @@
         </div>
         </main>
     </div>
+</section>
 
       <footer class="footer">
         <p>
@@ -212,11 +209,11 @@
           <a href="#"><i class="fa-brands fa-github"></i></a>
           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-          
+        
       </footer>
     </body>
     <!-- -->
-        <!-- custom js -->
+    <!-- custom js -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <!-- typed -->
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
