@@ -65,7 +65,7 @@ header {
   // flex-box
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding:1rem 4rem;
   //position
   position:fixed;
@@ -453,7 +453,59 @@ img{
   }
 
 }
+/* footer */
 
+#footer {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  background:$sub-color;
+  box-shadow: .1rem 0 1rem .1rem $gray;
+
+  .logo{
+    text-decoration: none;
+
+    h1{
+      font-size: 2rem;
+      font-family: "Exo 2";
+      border: 2px solid $btn-border;
+      border-radius: 4rem;
+      padding: .5rem;
+      text-decoration: underline $gray;
+      box-shadow: -.5rem .5rem 0 .2rem $gray;
+      transition: all .2s ease-in;
+      color:$gray;
+      margin: 2rem 0;
+     
+      
+      &:hover {
+        box-shadow: .5rem .5rem 0 .2rem $gray;
+
+      }
+
+    }
+  }
+    .icons{
+      margin:2rem 0;
+
+      a{
+        text-decoration: none;
+        font-size: 3rem;
+        margin:0 1rem;
+        color:$gray;
+
+        &:hover{
+          color:$main-color;
+        }
+      }
+    }
+    h1{
+      margin:2rem 0;
+      font-size: 2rem;
+      color:$gray;
+    }
+}
 
 // mediaQueries
 @media(max-width:991px) {
@@ -502,6 +554,17 @@ img{
             width: 90vw;
             text-align: center;
             margin-top:2rem ;
+
+              p{
+                font-size: 2.2rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bolder;
+                line-height: 1;
+                color: $btn-border;
+                background: rgba(0,0,0,0.1);
+                border-radius: 2rem;
+                padding:.5rem;
+              }
           }
       }
     }
@@ -595,7 +658,7 @@ header {
     }
     .progress{
       margin:3rem 0;
-      width:  60%;
+      width:  50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -620,6 +683,18 @@ header {
         .progress{
           width: 100%;
         } 
+    }
+  }
+}
+
+@media (max-width:515px){
+  #home{
+    .image{
+      width: 50%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
