@@ -462,6 +462,7 @@ img{
   width: 100vw;
   background:$sub-color;
   box-shadow: .1rem 0 1rem .1rem $gray;
+  flex-wrap: wrap;
 
   .logo{
     text-decoration: none;
@@ -608,6 +609,7 @@ img{
     .nav-toggle{
       left:0;
     }
+  
 }
 @media (max-width:768px){
 header {
@@ -684,6 +686,9 @@ header {
           width: 100%;
         } 
     }
+  }
+  #footer{
+    flex-flow: column-reverse;
   }
 }
 
