@@ -71,6 +71,17 @@ section {
   box-shadow: 0.8rem 0.6rem 0.4rem 0.2rem rgba(0, 0, 0, 0.8);
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  text-transform: 2.5rem;
+  color: #222;
+  text-decoration: underline !important;
+  color: #512a10;
+  font-weight: 800;
+}
+
 /* header - menu & Login form */
 .header {
   z-index: 1000;
@@ -281,7 +292,8 @@ section {
   color: #222;
 }
 .about img {
-  filter: drop-shadow(5px 15px 5px rgba(197, 125, 86, 0.9));
+  filter: drop-shadow(40px 5px 5px rgba(197, 125, 86, 0.9));
+  transition: 0.5s ease-in-out;
 }
 .about img:hover {
   transform: rotate(45deg);
@@ -334,12 +346,101 @@ section {
 }
 .menu .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 2rem;
 }
 .menu .box-container .box {
   text-align: center;
   padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.menu .box-container .box:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 1rem 1.5rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-1rem);
+}
+.menu .box-container .box img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+.menu .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: 2rem;
+  color: #222;
+  color: #c57d56;
+  font-weight: bold;
+}
+.menu .box-container .box p {
+  padding: 1rem;
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* galeria */
+.gallery .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.gallery .box-container .box {
+  position: relative;
+  overflow: hidden;
+  height: 25rem;
+}
+.gallery .box-container .box:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.gallery .box-container .box:hover img {
+  transform: translateY(-100%);
+}
+.gallery .box-container .box:hover .content {
+  transform: translateY(0);
+  border: 0.2rem solid rgba(197, 125, 86, 0.4);
+  border-radius: 0.5rem;
+  padding: 4.5rem;
+}
+.gallery .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.gallery .box-container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+}
+.gallery .box-container .box .content h3 {
+  font-size: 2.5rem;
+  text-transform: 2.5rem;
+  color: #222;
+  color: #512a10;
+  font-weight: bold;
+}
+.gallery .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+  color: #222;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 /* mediaqueries  */
