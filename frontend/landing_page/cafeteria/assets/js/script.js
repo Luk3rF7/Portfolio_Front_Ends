@@ -20,6 +20,7 @@ menu.onclick = () => {
   menu.classList.toggle('fa-times');
   navbar.classList.toggle('active');
 }
+
 // window  header menu
 window.onscroll = () => {
   loginForm.classList.remove('active');

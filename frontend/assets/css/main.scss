@@ -1,5 +1,6 @@
 $main-color: #3e4ca0;
 $sub-color:#828ece;
+$transp-color:rgba(130, 142, 206,.5);
 $gray:#FFEAC8;
 $btn-border:#123;
 /* mixim */
@@ -427,9 +428,10 @@ img{
 
       button{
         font-size: 2rem;
-        border-radius:.5rem;
-        background-color: #3e4ca0;
+        border-radius:1rem;
+        background-color:$transp-color;
         color: $gray;
+        border:2px solid $sub-color;
         cursor: pointer;
 
         position: absolute;
@@ -441,8 +443,10 @@ img{
       }
 
         &:hover button{
-          top:40%;
+          top:30%;
           transform:translate(-50%,50%);
+          background: $main-color;
+          color: $gray;
         }
 
         &:hover img {

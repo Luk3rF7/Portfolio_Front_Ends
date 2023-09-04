@@ -32,8 +32,16 @@ section {
   padding:5rem 1rem;
 }
 .img_ajust{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid $main-color;
+  margin-bottom: 2rem;
+  transition: .4s ease;
+
+  &:hover {
+    transform: scale(105%);
+  }
 }
 /* keyframes animação */
 @keyframes fadeIn {
@@ -348,7 +356,7 @@ section {
 /* mediaqueries  */
 @media (max-width:991px){
   html{
-    font-size: 55%;
+    font-size: 50%;
     scroll-padding-top:8rem;
   }
   .home h3{
@@ -402,6 +410,6 @@ section {
 }
 @media (max-width:450px){
   html{
-    font-size: 50%;
+    font-size: 45%;
   }
 }
