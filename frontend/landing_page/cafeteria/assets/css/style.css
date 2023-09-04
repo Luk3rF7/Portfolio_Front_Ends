@@ -1,0 +1,178 @@
+/* import */
+/* variable */
+/* mixin - grid */
+/* Reset Css */
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #512a10;
+}
+
+/* section - setup */
+section {
+  padding: 5rem 1rem;
+}
+
+.link-btn {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border: 0.2rem solid #512a10;
+  color: #512a10;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 2rem;
+}
+.link-btn:hover {
+  background: #512a10;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0.8rem 0.6rem 0.4rem 0.2rem rgba(0, 0, 0, 0.8);
+}
+
+/* header - menu & Login form */
+.header {
+  z-index: 1000;
+  padding: 4rem 0;
+  /* nav  */
+  /* icons nav */
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+.header .nav a {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+}
+.header .nav a:hover {
+  -webkit-text-decoration: underline #222 !important;
+          text-decoration: underline #222 !important;
+  text-underline-offset: 0.8rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.4);
+  color: #222;
+  font-weight: 700;
+}
+.header .icons div {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.header #menu-btn {
+  display: none;
+}
+
+.home {
+  background: url(../img/homepage.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* form-login */
+.login-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  /* centralizar meio com flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.login-form form {
+  width: 50rem;
+  padding: 4rem;
+  background: #fff;
+  text-align: center;
+  border: 0.2rem solid #512a10;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.2rem 0 rgba(255, 255, 255, 0.5);
+}
+.login-form form .logo {
+  font-size: 2.5rem;
+  color: #512a10;
+  font-weight: bolder;
+  padding: 0.5rem;
+}
+.login-form form .logo i {
+  margin-right: 1.5rem;
+  font-size: 4rem;
+  color: #222;
+}
+.login-form form h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: 2rem;
+  color: #222;
+}
+.login-form form .box {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border: 0.2rem solid #512a10;
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+.login-form form .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem 0;
+}
+.login-form form label {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.login-form form a {
+  font-size: 1.5rem;
+  color: #512a10;
+  font-weight: 500;
+  margin-left: auto;
+}
+.login-form form a:hover {
+  text-decoration: underline !important;
+}
+.login-form .link-btn {
+  width: 95%;
+  margin-bottom: 2rem;
+}
+.login-form .account {
+  padding: 0.5rem;
+  background: #eee;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */
