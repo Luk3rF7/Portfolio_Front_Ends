@@ -85,7 +85,7 @@ section {
 /* header - menu & Login form */
 .header {
   z-index: 1000;
-  padding: 3rem 0;
+  padding: 4rem 0;
   /* nav  */
   /* icons nav */
 }
@@ -113,18 +113,18 @@ section {
   transform: rotate(-45deg);
 }
 .header .nav a {
+  border: 1px solid transparent;
   font-size: 1.5rem;
-  margin-right: 1.5rem;
-  padding: 0.8rem 1.5rem;
+  margin-right: 2rem;
+  padding: 1rem 1rem;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 0.8rem;
 }
 .header .nav a:hover {
   text-underline-offset: 0.8rem;
   background: rgba(197, 125, 86, 0.5);
   color: #fff;
-  font-weight: bold;
   border-radius: 0.8rem;
   border: 1px solid #fff;
 }
@@ -443,6 +443,140 @@ section {
   margin-bottom: 1rem;
 }
 
+/* avaliaçao */
+.reviews {
+  background: #eee;
+}
+.reviews .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.reviews .box-container .box {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.reviews .box-container .box:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background: #fff;
+}
+.reviews .box-container .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #512a10;
+}
+.reviews .box-container .box img:hover {
+  transform: scale(110%);
+}
+.reviews .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: 2rem;
+  color: #222;
+}
+.reviews .box-container .box p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+.reviews .box-container .box .stars {
+  margin-top: 1rem;
+}
+.reviews .box-container .box .stars i {
+  color: orange;
+  font-size: 2rem;
+}
+.reviews .box-container .box .stars i:hover {
+  color: #512a10;
+  transform: scale(110%);
+}
+
+/* section contato */
+.contact .contact-info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.contact .contact-info-container .box {
+  border: 0.2rem solid #512a10;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.contact .contact-info-container .box:hover {
+  box-shadow: 2rem 1.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 10;
+  transform: translateY(-5%);
+}
+.contact .contact-info-container .box i {
+  border: 0.2rem solid #512a10;
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+  color: #512a10;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+.contact .contact-info-container .box i:hover {
+  background: rgba(197, 125, 86, 0.5);
+  transform: rotateY(350deg);
+}
+.contact .contact-info-container .box h3 {
+  font-size: 2rem;
+  text-transform: 2rem;
+  color: #222;
+  padding: 0.5rem 0;
+}
+.contact .contact-info-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+.contact form h3 {
+  font-size: 3rem;
+  text-transform: 3rem;
+  color: #222;
+  color: #512a10;
+  font-weight: bold;
+  text-align: center;
+}
+.contact form .box {
+  margin: 0.7rem;
+  border: 0.2rem solid #512a10;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+}
+.contact form .box:focus {
+  background: rgba(197, 125, 86, 0.3);
+}
+.contact form .box:focus::-moz-placeholder {
+  color: #222;
+}
+.contact form .box:focus::placeholder {
+  color: #222;
+}
+.contact form textarea {
+  height: 15rem;
+  resize: none;
+  border-radius: 1rem;
+}
+.contact .map {
+  border: 0.2rem solid #965d3f;
+  border-radius: 2rem;
+}
+
 /* mediaqueries  */
 @media (max-width: 991px) {
   html {
@@ -490,6 +624,9 @@ section {
   }
   .header .nav a {
     margin: 1rem 2rem;
+  }
+  .contact .map {
+    height: 25rem;
   }
 }
 @media (max-width: 450px) {

@@ -75,10 +75,11 @@ section {
   color:$main-color;
   font-weight: 800;
 }
+
 /* header - menu & Login form */
 .header{
   z-index:1000;
-  padding:3rem 0;
+  padding:4rem 0;
 
   &.active{
       padding:1.2rem 0;
@@ -109,18 +110,18 @@ section {
     /* nav  */
     .nav {
         a{
+          border: 1px solid transparent;
           font-size:1.5rem;
-          margin-right:1.5rem;
-          padding:.8rem 1.5rem;
+          margin-right:2rem;
+          padding:1rem 1rem;
           color:$white;
-          font-weight: bold;
+          font-weight: 700;
           border-radius: .8rem;
           
           &:hover{
             text-underline-offset: .8rem;
             background:rgba(197, 125, 86,.5);
             color:$white;
-            font-weight: bold;
             border-radius: .8rem;
             border: 1px solid $white;
           }
@@ -393,7 +394,7 @@ section {
 .gallery {
   .box-container{
     @include grid(30rem);
-
+    
     .box{
       position: relative;
       overflow:hidden;
@@ -402,7 +403,7 @@ section {
       &:hover{
           box-shadow: $box-shadow;
           border:$box-shadow;
-    
+        
          img{
           transform: translateY(-100%);
          }
@@ -413,7 +414,6 @@ section {
           padding: 4.5rem;
          }
       }
-
       img{
         height: 100%;
         width: 100%;
@@ -448,6 +448,142 @@ section {
     }
   }
 }
+/* avaliaçao */
+
+.reviews{
+  background:$light-bg;
+
+  .box-container{
+    @include grid(30rem);
+
+    .box{
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: .5rem;
+      border: 1px solid rgba(0,0,0,0.1);
+      
+      &:hover{
+        border: 1px solid rgb(0,0,0);
+        background: $white;
+
+      }
+      img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+        object-fit: cover;
+        border: 2px solid $main-color;
+
+        &:hover{
+          transform: scale(110%);
+        }
+      }
+
+      h3{
+        @include title-text(2rem);
+      }
+      p{
+        @include graph-text(1.6rem);
+      }
+      .stars{
+        margin-top: 1rem;
+        
+        i{
+          color:orange;
+          font-size:2rem;
+
+          &:hover{
+            color:$main-color;
+            transform:scale(110%);
+          }
+        }
+        }
+
+     
+    }
+  }
+}
+/* section contato */
+.contact{
+  .contact-info-container{
+    @include grid(30rem);
+    margin-bottom:3rem;
+   
+    .box{
+      border: $border;
+      padding:3rem 2rem;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover{
+        box-shadow:2rem 1.5rem  1rem 0 rgba(0,0,0,0.4);
+        position: relative;
+        top:10;
+
+        transform: translateY(-5%);
+
+      }
+
+      i{
+        border: $border;
+        height: 6rem;
+        width: 6rem;
+        line-height:6rem;
+        font-size: 2rem;
+        color:$main-color;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        transition:  .5s ease;
+
+        &:hover{
+          background:rgba(197, 125, 86,.5);
+          transform: rotateY(350deg)
+        }
+      }
+        h3{
+          @include title-text(2rem);
+          padding:.5rem 0;
+        }
+        p{
+          @include graph-text(1.5rem);
+        }
+    }
+  }
+    form{
+      h3{
+      @include title-text(3rem);
+      color:$main-color;
+      font-weight: bold;
+      text-align: center;
+      }
+    .box{
+      margin:.7rem;
+      border:$border;
+      font-size:1.1rem;
+      width: 100%;
+      padding:1.2rem 1.4rem;
+
+      &:focus{
+        background:rgba(197, 125, 86,.3);
+
+        &::placeholder{
+          color:$black;
+        }
+      }
+    }
+    textarea{
+      height:15rem;
+      resize:none;
+      border-radius: 1rem;;
+    } 
+  }
+  .map{
+    border:.2rem solid #965d3f;
+    border-radius: 2rem;
+  }
+}
+
 /* mediaqueries  */
 @media (max-width:991px){
   html{
@@ -501,6 +637,9 @@ section {
           margin:1rem 2rem;
         }
     }
+  }
+  .contact .map{
+    height: 25rem;
   }
 }
 @media (max-width:450px){
