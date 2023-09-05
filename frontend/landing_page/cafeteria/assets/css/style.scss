@@ -506,6 +506,7 @@ section {
 }
 /* section contato */
 .contact{
+  background: $white;
   .contact-info-container{
     @include grid(30rem);
     margin-bottom:3rem;
@@ -583,7 +584,81 @@ section {
     border-radius: 2rem;
   }
 }
+/* section blogs */
+.blogs{
+  background:$light-bg;
+  .box-container{
+    @include grid(30rem);
 
+    .box{
+     .image{
+      height: 25rem;
+      overflow: hidden;
+
+      &:hover{
+        transform: rotate(10deg);
+      }
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(70%);
+        border: 1px solid #333;
+        
+
+        &:hover{
+          transform: scale(90%);
+          box-shadow: 2rem 2rem .5rem rgba(0,0,0,.5);
+        }
+      }
+     }
+    }
+    .content{
+      padding:2rem;
+      text-align: center;
+
+      &:hover{
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: .2rem .2rem 2rem rgba(0,0,0,0.1);
+      }
+      h3{
+      @include title-text(2rem);
+
+      }
+      p{
+        @include graph-text(1.5rem);
+        padding: 1rem 0;
+      }
+    }
+      .icons{
+        margin-top: 1.5rem;
+        padding:1.7rem;
+        background:$white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid $main-color;
+
+        &:hover{
+          background: rgba(197, 125, 86,.8);
+          
+        }
+       
+        span{
+          @include title-text(1.5rem);
+          font-weight: 600;
+
+
+          i{
+            padding-right:.5rem;
+            color:$main-color;
+          }
+        }
+      }
+  }
+
+}
 /* mediaqueries  */
 @media (max-width:991px){
   html{
