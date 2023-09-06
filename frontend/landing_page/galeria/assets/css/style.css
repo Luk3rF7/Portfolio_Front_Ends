@@ -138,7 +138,7 @@ header #menu{
   display: none;
 }
 header.header-active{
-  background:var(--transparent);
+  background:rgba(0,0,0,.3);
   box-shadow: var(--box-shadow-header);
 }
 header.header-active form {
@@ -243,6 +243,159 @@ header.header-active form {
   color:var(--pink);
   font-size: 2rem;
 }
+/* galeria */
+
+.gallery{
+  column-count: 3;
+  padding:4rem 10%;
+}
+.gallery .box {
+  padding:1rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.gallery .box img{
+  width: 100%;
+  object-fit: cover;
+  border: 1rem  double var(--pink);
+}
+.gallery .box:hover{
+  transform: scale(105%);
+}
+.gallery .box .info{
+  position:absolute;
+  bottom:-100%;
+  left:0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery .box:hover .info{
+  bottom: 0;
+
+}
+.gallery .box .info .fa-download{
+  margin: 4rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color:#333;
+  background: var(--white);
+  box-shadow: 0 .1rem .2rem rgba(0,0,0,.7);
+}
+
+.gallery .box .info .fa-download:hover{
+  color:var(--white);
+  background: var(--pink);
+}
+
+.gallery .box .info .links{
+  padding-right:1rem;
+}
+.gallery .box .info .links a{
+ font-size:2rem;
+ text-shadow: 0 .1rem .1rem #000;
+ margin: 4.5rem .5rem;
+ padding:1rem;
+ color:var(--white);
+}
+.gallery .box .info .links a:hover{
+ color:var(--pink);
+ transform: scale(120%);
+}
+
+.more{
+  font-size: 2rem;
+  display: block;
+  margin:0 auto;
+  margin-bottom: 3rem;
+  height: 4rem;
+  width: 20rem;
+  border-radius: 5rem;
+  background: var(--pink);
+  color:var(--white);
+  cursor: pointer;
+  line-height: 4rem;
+  text-align: center;
+}
+.more:hover {
+  background: var(--white);
+  color: var(--pink);
+  border: .1rem solid var(--pink);
+  letter-spacing: .1rem;
+  transform: scale(115%);
+}
+/* foooter */
+
+.footer{
+  background:#000;
+}
+.footer .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+  margin:2rem;
+  flex :1 1 30rem;
+}
+
+.footer .box-container .box h3{
+  color:var(--pink);
+  font-size: 2.5rem;
+  text-align: center;
+}
+.footer .box-container .box p{
+  color:var(--white);
+  font-size: 1.5rem;
+  padding:1.5rem;
+}
+.footer .box-container .box:nth-child(2){
+  text-align: center;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: .4rem 0;
+  color:var(--white);
+}
+.footer .box-container .box a:hover{
+  color:#ff0552;
+  transform: scale(120%);
+  background: rgba(255,255,255,.4);
+}
+.footer .box-container .box form {
+  display: flex;
+  width: 100%;
+}
+.footer .box-container .box form input{
+  height:4rem ;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  color:var(--gray);
+  border: .2rem solid var(--pink);
+}
+.footer .box-container .box form input:focus{
+  color:var(--pink);
+}
+.footer .box-container .box form button{
+  height:4rem ;
+  width: 5rem;
+  line-height:4rem ;
+  text-align: center;
+  font-size: 1.7rem;
+  color:var(--pink);
+  cursor: pointer;
+  border: .2rem solid var(--pink);
+}
+.footer .box-container .box form button:hover{
+  color:var(--black);
+  background: var(--pink);
+  border: .2rem solid var(--pink);
+}
 /* media queries */
 
 @media (max-width:991px){
@@ -251,6 +404,10 @@ header.header-active form {
   }
   header form #search{
     width: 100%;
+  }
+
+  .gallery{
+    column-count: 2;
   }
 }
 @media (max-width:768px){
@@ -300,40 +457,9 @@ header.header-active form {
   .home form {
     width: 100%;
   }
-}
-/* galeria */
-
-.gallery{
-  column-count: 3;
-  padding:4rem 10%;
-}
-.gallery .box {
-  padding:1rem;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-.gallery .box img{
-  width: 100%;
-  object-fit: cover;
-}
-
-.gallery .box .info{
-  position:absolute;
-  bottom:0;
-  left:0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.gallery .box .info .fa-download{
-  margin:2rem;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  color:#333;
-  background: var(--white);
-  box-shadow: 0 .1rem .2rem rgba(0,0,0,.7);
+  .gallery{
+    column-count: 1;
+  }
 }
 @media (max-width:500px){
   header form {
@@ -352,4 +478,8 @@ header.header-active form {
   .home h1{
     font-size: 4rem;
   }
+  .gallery{
+   padding: 2rem 1rem;
+  }
+  
 }
