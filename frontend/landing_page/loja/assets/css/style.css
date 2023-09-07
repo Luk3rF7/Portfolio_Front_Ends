@@ -476,6 +476,7 @@ border: .1rem dashed var(--white);
   background:linear-gradient(rgba(255,255,255,.4),rgba(0,0,0,.2),rgba(238,193,221,.5)),url(../img/footer.jpg)no-repeat;
   background-position: center;
   background-size: cover;
+  border-top: .1rem solid var(--pink);
 }
 .footer .box-container .box{
   flex:1 1 20rem;
