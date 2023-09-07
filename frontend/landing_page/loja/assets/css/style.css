@@ -131,7 +131,7 @@ header .fa-bars{
 .home .content h3{
   font-size: 6rem;
   color:var(--black-primary);
-  text-shadow: .4rem .2rem .1rem  var(--pink);
+  text-shadow: .2rem .2rem .1rem  var(--pink);
   font-family: 'Open Sans', sans-serif;
 }
 .home .content span{
@@ -159,6 +159,10 @@ header .fa-bars{
   header{
     padding:2rem;
   }
+  section{
+    padding: 2rem;
+  }
+  
 }
 @media (max-width:768px){
   header .fa-bars{
@@ -179,7 +183,7 @@ header .fa-bars{
     background:var(--white);
     border:.1rem solid rgba(0,0,0,.1);
     display: block;
-    
+    font-size: 2.5rem;
   }
   header #toggle:checked  ~ .navbar{
     clip-path: polygon(0 0,100% 0,100% 100%,0% 100% );
@@ -187,13 +191,35 @@ header .fa-bars{
   header .navbar a:hover{
     margin:1.5rem;
     padding:1.5rem;
-    background:var(--white);
+    font-size: 3rem;
+    background:rgba(238, 193, 221, 0.8);
     border:.1rem solid rgba(0,0,0,.1);
     display: block;
+  }
+  .home{
+    width: 100%;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+  .home .content span{
+    font-size: 3rem;
   }
 }
 @media (max-width:450px){
   html{
     font-size: 50%;
+  }
+  header .logo{
+    font-size: 2.5rem;
+  }
+  header .icons a{
+    font-size: 2rem;
+    padding:.5rem;
+    margin-left: .5rem;
+  }
+  header .fa-bars{
+    font:1.5rem;
   }
 }
