@@ -65,7 +65,7 @@ header {
   right: 0;
   top: 0;
   background:linear-gradient(100deg,rgba(244, 1, 94, 0.4),rgba(195, 237, 192,0.7),rgba(53, 124, 60,.5));
-  padding:2rem 9%;
+  padding:1rem 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,12 +73,12 @@ header {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 header .logo {
-  font-size: 3rem;
+  font-size: 2.2rem;
   color:var(--black);
   font-weight: bolder;
   background: rgba(255,255,255,.2);
   border: .1rem solid rgba(0,0,0,.1);
-  padding:1.5rem;
+  padding:1.2rem;
   border-radius: 2rem;
 }
 header .logo:hover{
@@ -96,8 +96,6 @@ header .navbar a{
 }
 header .navbar a:hover{
   color:var(--pink);
-  font-size: 2.2rem;
-  padding:0 2rem;
 }
 header .icons a{
   font-size: 2rem;
