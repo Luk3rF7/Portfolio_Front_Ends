@@ -201,9 +201,8 @@ body {
   transform: translateY(5rem);
 }
 #course .box-container .box p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 0 0.4rem;
-  font-weight: bold;
   text-align: center;
   color: #FFF;
   opacity: 0;
@@ -226,7 +225,186 @@ body {
   background: #00B894;
 }
 
-/* keygram animação backgorund */
+#service {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: #00B894;
+}
+#service .heading {
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: 2rem 0;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  /* linha */
+  font-weight: 800;
+  font-family: "Nunito";
+}
+#service .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: rgba(0, 184, 147, 0.8);
+}
+#service .heading::after {
+  background: #FFF;
+  width: 90vw;
+}
+#service .box-container {
+  width: 90%;
+}
+#service .box-container .box {
+  background: #FFF;
+  max-width: 60rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.3rem #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  margin: 2rem;
+  clear: both;
+}
+#service .box-container .box:hover {
+  background: #00B894;
+  border: 0.1rem solid #FFF;
+  box-shadow: 1rem 1rem 0 0.2rem #FFF;
+}
+#service .box-container .box:hover img {
+  background: #FFF;
+  border-radius: 2rem;
+  border: 0.1rem solid #333;
+}
+#service .box-container .box:hover .info {
+  border-left: 0.3rem solid #FFF;
+}
+#service .box-container .box:hover .info h2 {
+  color: #FFF;
+}
+#service .box-container .box img {
+  height: 7rem;
+  margin-right: 4rem;
+  border-radius: 2rem;
+  border-bottom: 0.2rem solid #00B894;
+  border-left: 0.2rem solid #00B894;
+  border-right: 0.1rem solid #00B894;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+#service .box-container .box .info {
+  padding-left: 2.5rem;
+  border-left: 0.3rem solid #00B894;
+}
+#service .box-container .box .info h2 {
+  font-size: 3rem;
+  color: #00B894;
+  font-weight: bold;
+}
+#service .box-container .box .info p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333;
+}
+#service .box-container .box:nth-child(2) {
+  float: right;
+}
+
+#review {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: #333;
+}
+#review .heading {
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: 2rem 0;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  /* linha */
+  font-weight: 800;
+  font-family: "Nunito";
+}
+#review .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: rgba(0, 184, 147, 0.8);
+}
+#review .heading::after {
+  background: #FFF;
+  width: 100vw;
+}
+#review .box-container {
+  width: 90%;
+}
+#review .box-container .box {
+  background: #FFF;
+  max-width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem;
+  margin-left: 5rem;
+  padding-left: 6rem;
+  position: relative;
+  clear: both;
+  border-radius: 3rem;
+  border: 0.5rem double #00B894;
+}
+#review .box-container .box:hover {
+  transform: scale(110%);
+  box-shadow: 2rem 2rem 1rem 0 #00B894;
+}
+#review .box-container .box img {
+  position: absolute;
+  top: 50%;
+  left: -9%;
+  transform: translateY(-50%);
+  height: 12rem;
+  width: 12rem;
+  border-radius: 10rem;
+  border: 0.5rem solid #00B894;
+  box-shadow: 0.1rem 0.1rem 5rem #00B894 inset;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#review .box-container .box .info h2 {
+  margin-top: -2.5rem;
+  margin: 2rem;
+  color: #00B894;
+  text-align: right;
+}
+#review .box-container .box .info p {
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: #333;
+}
+#review .box-container .box .info p i {
+  padding: 1rem;
+  color: #00B894;
+}
+#review .box-container .box:nth-child(even) {
+  float: right;
+}
+
+/* keyframes animação backgorund */
 @keyframes background {
   0%, 100% {
     background: linear-gradient(75deg, rgba(255, 255, 255, 0.8) 52%, #00B894 1%, rgba(196, 196, 196, 0) 52.49%), url(../img/back-md.jpg);
@@ -301,5 +479,61 @@ body {
   #home .content .icons {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media (max-width: 500px) {
+  #service .box-container .box {
+    flex-flow: column;
+    padding: 1.5rem;
+  }
+  #service .box-container .box img {
+    height: 15rem;
+    border-radius: 2rem;
+    border-bottom: 0.8rem solid #00B894;
+    margin: 1rem;
+  }
+  #service .box-container .box .info {
+    padding-left: 0;
+    padding-top: 3rem;
+    border: none;
+    text-align: center;
+  }
+  #service .box-container .box .info:hover {
+    border: none;
+  }
+  #service .box-container .box .info p {
+    padding: 1rem;
+  }
+  #review .box-container {
+    width: 100%;
+  }
+  #review .box-container .box {
+    justify-content: space-evenly;
+    margin: 6rem;
+    padding: 1rem;
+  }
+  #review .box-container .box:hover {
+    box-shadow: none;
+    transform: none;
+  }
+  #review .box-container .box .box:nth-child(even) {
+    float: none;
+  }
+  #review .box-container .box img {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -18%;
+    height: 10rem;
+    width: 10rem;
+  }
+  #review .box-container .box .info {
+    text-align: center;
+  }
+  #review .box-container .box .info h2 {
+    margin: 1rem;
+  }
+  #review .box-container .box .info p {
+    padding-top: 8rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
