@@ -1,0 +1,137 @@
+@import './scss/variables';
+/* reset */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  font-family:'Exo 2',sans-serif;
+}
+html {
+  font-size:62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  height: 2000px;
+}
+/* header  */
+
+#header {
+  position: fixed;
+  top:-100%;
+  left:0;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem 4rem;
+  background: $white;
+  box-shadow: 0 .1rem .3rem $gray-p;
+  z-index:1100;
+
+  .logo{
+    border: .1rem solid rgb(0, 184, 147,.2);
+    border-radius: .5rem;
+    padding:0 .5rem;
+    width: 14rem;
+    img{
+      width: 100%;
+      object-fit: cover;
+    
+    }
+  }
+
+  nav{
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      margin-bottom: 0;
+
+      li{
+        margin-right:2.5rem;
+        
+        a{
+          color:$primary;
+          font-size:2.5rem;
+          font-weight: 600;
+          text-decoration: none;
+          padding:.8rem 1.5rem;
+          border-bottom:.1rem solid rgba(0,184,147,.6);
+          border-top:.1rem solid transparent;
+          border-left:.1rem solid transparent;
+          border-right:.1rem solid transparent;
+          border-radius: 2rem;
+          
+          &:hover{
+            padding:.8rem 1.5rem;
+            border: .1rem solid rgb(0, 0, 0,.2);
+            background: rgb(0, 184, 147,.6);
+            color:$white;
+          }
+        }
+       
+      }
+    }
+  }
+  /* menu - 1 */
+   .fa-bars{
+   font-size: 3rem;
+   color:$primary;
+   cursor: pointer;
+   display: none;
+   
+  }
+}
+
+@media(max-width:997px){
+  html{
+    font-size: 55%;
+  }
+}
+
+@media (max-width:768px){
+  /* menu - 2 */
+  #header{
+    nav{
+      position: fixed;
+      top:-120%;
+      left:0;
+      right:0;
+      height: calc(100vh - 5rem);
+      width: 100vw;
+      background:$white;
+
+      
+      ul{
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+        
+
+        li{
+          margin:2rem 0;
+          a{
+            font-size: 3rem;
+            border:none;
+
+          }
+        }
+      }
+    }
+      .fa-bars{
+        display: block;
+        font-size: 3rem;
+      }
+      .nav-toggle{
+        top:7rem;
+        right:0;
+        
+      }
+  }
+}
