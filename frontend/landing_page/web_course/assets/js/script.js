@@ -6,7 +6,7 @@ $(document).ready(function () {
   });
 
   /* header */
-  $(window).scroll(function () {
+  $(window).on('load scroll', function () {
 
     if ($(window).scrollTop() > 20) {
       $('#header').css('top', '0')

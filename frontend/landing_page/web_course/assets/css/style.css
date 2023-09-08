@@ -19,7 +19,6 @@ html {
 
 body {
   overflow-x: hidden;
-  height: 2000px;
 }
 
 /* header  */
@@ -83,12 +82,182 @@ body {
   display: none;
 }
 
+/* home page */
+#home {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(..//img/back1.jpg);
+  background-position: center;
+  background-size: cover;
+  /* animação  */
+  animation: background 10s alternate infinite;
+}
+#home .content {
+  position: relative;
+}
+#home .content .icons {
+  position: absolute;
+  left: 2rem;
+  bottom: -65%;
+  width: 100%;
+}
+#home .content .icons a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.7rem;
+  margin-right: 1.5rem;
+  border-radius: 5rem;
+  transition: 0.6s ease-in;
+  text-align: center;
+  background: #00B894;
+  color: #FFF;
+}
+#home .content .icons a:hover {
+  text-decoration: none;
+  background: #333;
+  transform: rotateY(360deg);
+  box-shadow: 0.5rem 0.3rem 0 0.2rem rgba(0, 184, 147, 0.8);
+}
+#home .content h1 {
+  font-size: 6rem;
+  color: #00B894;
+}
+#home .content h2 {
+  font-size: 5rem;
+  color: #00B894;
+}
+#home .content h3 {
+  font-size: 3rem;
+  color: #00B894;
+  margin: 1rem 0;
+}
+#home .content button {
+  outline: none;
+  border: none;
+  background: #00B894;
+  border-radius: 5rem;
+  height: 4rem;
+  width: 18rem;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+#home .content button:hover {
+  background: #333;
+}
+
+#course {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+#course .heading {
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: 2rem 0;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  /* linha */
+  color: #00B894;
+}
+#course .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: rgba(0, 184, 147, 0.8);
+}
+#course .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
+}
+#course .box-container .box {
+  height: 25rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.3rem #333;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  cursor: pointer;
+  overflow: hidden;
+}
+#course .box-container .box img {
+  height: 35%;
+  width: 35%;
+  transform: translateY(5rem);
+}
+#course .box-container .box p {
+  font-size: 1.3rem;
+  padding: 0 0.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #FFF;
+  opacity: 0;
+  transform: translateY(12rem);
+}
+#course .box-container .box:hover p {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+#course .box-container .box:hover img {
+  height: 25%;
+  width: 25%;
+  transform: translateY(-2rem);
+  padding: 0.1rem;
+  border-radius: 50%;
+  border: 0.1rem solid #333;
+  background: #FFF;
+}
+#course .box-container .box:hover {
+  background: #00B894;
+}
+
+/* keygram animação backgorund */
+@keyframes background {
+  0%, 100% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0.8) 52%, #00B894 1%, rgba(196, 196, 196, 0) 52.49%), url(../img/back-md.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  25% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0.8) 51.5%, #000 5%, rgba(196, 196, 196, 0) 52.49%), url(../img/back1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  50% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0.8) 52%, #00B894 1%, rgba(196, 196, 196, 0) 52.49%), url(../img/back2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  75% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0.8) 51.5%, #000 5%, rgba(196, 196, 196, 0) 52.49%), url(../img/back3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
 @media (max-width: 997px) {
   html {
     font-size: 55%;
   }
 }
 @media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
   /* menu - 2 */
   #header nav {
     position: fixed;
@@ -118,5 +287,19 @@ body {
   #header .nav-toggle {
     top: 7rem;
     right: 0;
+  }
+  #home {
+    animation: none;
+    background: linear-gradient(-130deg, rgba(196, 196, 196, 0.4) 30%, rgba(255, 255, 255, 0.8) 45%), url(../img/back-md.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #home .content {
+    text-shadow: 0.1rem 0.1rem 0.3rem #333;
+  }
+  #home .content .icons {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }/*# sourceMappingURL=style.css.map */

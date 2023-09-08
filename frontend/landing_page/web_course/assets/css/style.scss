@@ -15,7 +15,28 @@ html {
 
 body{
   overflow-x: hidden;
-  height: 2000px;
+}
+
+@mixin heading(){
+  font-size:4rem;
+  padding-top: 5rem;
+  margin:2rem 0;
+  color:$white;
+  text-align: center;
+  position:relative;
+
+  /* linha */
+  &::after{
+    content:'';
+    position: absolute;
+    bottom: -1.5rem;
+    left:50%;
+    transform:translateX(-50%);
+    height: .3rem;
+    width: 60%;
+    border-radius: 5rem;
+    background: rgba(0,184,147,.8);
+  }
 }
 /* header  */
 
@@ -24,8 +45,8 @@ body{
   top:-100%;
   left:0;
 
-  width: 100%;
-  display: flex;
+  width:100%;
+  display:flex;
   align-items: center;
   justify-content: space-between;
   padding:1rem 4rem;
@@ -88,7 +109,188 @@ body{
    
   }
 }
+/* home page */
+#home{
+  min-height: 100vh;
+  width: 100vw;
+  background:linear-gradient(76.34deg,#FFFFFF 52.45%,rgba(196,196,196,0) 52.49%),
+  url(..//img/back1.jpg);
+  background-position: center;
+  background-size: cover;
+  /* animação  */
+  animation:background 10s alternate infinite;
+  .content{
+    position: relative;
 
+    .icons{
+      position: absolute;
+      left:2rem;
+      bottom:-65%;
+      width: 100%;
+      
+      a{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 1.7rem;
+        margin-right: 1.5rem;
+        border-radius: 5rem;
+        transition: .6s ease-in;
+        text-align: center;
+        background: $primary;
+        color:$white;
+        
+        
+        &:hover{
+          text-decoration: none;
+          background: $black-p;
+          transform: rotateY(360deg);
+          box-shadow: .5rem .3rem 0 .2rem rgba(0,184,147,.8);
+        }
+      }
+    }
+    h1{
+      font-size: 6rem;
+      color:$primary;
+    }
+    h2{
+      font-size: 5rem;
+      color:$primary;
+    }
+    h3{
+      font-size: 3rem;
+      color:$primary;
+      margin:1rem 0;
+    }
+    button{
+      outline:none;
+      border: none;
+      background: $primary;
+      border-radius: 5rem;
+      height: 4rem;
+      width:18rem;
+      color:$white;
+      cursor:pointer;
+      font-size:2rem;
+      text-transform: capitalize;
+
+      &:hover{
+        background: $black-p;
+      }
+    }
+  }
+}
+#course{
+    display:grid;
+    place-items:center;
+    min-height: 100vh;
+    width: 100vw;
+
+    .heading{
+      @include heading();
+      color:$primary;
+    }
+    .box-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      flex-wrap: wrap;
+
+      .box{
+        height: 25rem;
+        width: 30rem;
+        border-radius: .5rem;
+        box-shadow:0 0 .3rem $black-p ;
+        margin:2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        cursor:pointer;
+        overflow: hidden;
+        
+        img{
+          height: 35%;
+          width: 35%;
+          transform: translateY(5rem);
+        }
+        p{
+          font-size: 1.3rem;
+          padding:0 .4rem;
+          font-weight:bold;
+          text-align: center;
+          color:$white;
+          opacity: 0;
+          transform: translateY(12rem);
+        }
+
+        &:hover p{
+          opacity: 1;
+          transform: translateY(0rem);
+        }
+        &:hover img{
+         height: 25%;
+         width: 25%;
+         
+         transform: translateY(-2rem);
+         padding: .1rem;
+         border-radius:50%;
+         border: .1rem solid $black-p;
+         background: $white;
+        }
+        &:hover {
+          background: $primary;
+        }
+      }
+    }
+  
+}
+/* keygram animação backgorund */
+
+@keyframes background{
+  0% ,100%{
+    background:linear-gradient(
+      75deg,
+      rgba(255,255,255,.8) 52%,
+     $primary 1%,
+    rgba(196,196,196,0) 52.49%),
+  url(../img/back-md.jpg);
+  background-position: center;
+  background-size: cover;
+  }
+  25%{
+    background:linear-gradient(
+    75deg,
+    rgba(255,255,255,.8) 51.50%,
+      #000 5%,
+    rgba(196,196,196,0) 52.49%),
+    url(../img/back1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  50%{
+    background:linear-gradient(
+      75deg,
+      rgba(255,255,255,.8) 52%,
+      $primary 1%,
+    rgba(196,196,196,0) 52.49%),
+    url(../img/back2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  75%{
+    background:linear-gradient(
+      75deg,
+      rgba(255,255,255,.8) 51.50%,
+      #000 5%,
+    rgba(196,196,196,0) 52.49%),
+    url(../img/back3.jpg);
+    background-position: center;
+    background-size: cover; 
+  }
+}
 @media(max-width:997px){
   html{
     font-size: 55%;
@@ -96,6 +298,9 @@ body{
 }
 
 @media (max-width:768px){
+  html{
+    font-size: 50%;
+  }
   /* menu - 2 */
   #header{
     nav{
@@ -131,7 +336,29 @@ body{
       .nav-toggle{
         top:7rem;
         right:0;
-        
+      }
+    }
+  #home{
+    animation:none;
+    background:
+    linear-gradient(
+      -130deg,
+      rgba(196,196,196,.4) 30%,
+      rgba(255,255,255,.8) 45%,
+      ),
+      url(../img/back-md.jpg)
+      no-repeat;
+      background-size: cover;
+      background-position:center;
+      background-attachment: fixed;
+
+      .content{
+        text-shadow:.1rem .1rem .3rem $black-p;
+
+        .icons{
+          left:50%;
+          transform: translateX(-50%);
+        }
       }
   }
 }
