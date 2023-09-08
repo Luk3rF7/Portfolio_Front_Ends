@@ -89,7 +89,7 @@ body {
   background: linear-gradient(76.34deg, #FFFFFF 52.45%, rgba(196, 196, 196, 0) 52.49%), url(..//img/back1.jpg);
   background-position: center;
   background-size: cover;
-  border-bottom: 2rem solid #00B894;
+  border-bottom: 0.2rem solid #00B894;
   /* animação  */
   animation: background 10s alternate infinite;
 }
