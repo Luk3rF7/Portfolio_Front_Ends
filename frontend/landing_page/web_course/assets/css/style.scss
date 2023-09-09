@@ -367,7 +367,7 @@ body{
 
       &:hover{
         transform: scale(110%);
-        box-shadow: 2rem 2rem 1rem 0 $primary;
+        box-shadow: 2rem 1rem 1rem 0 $primary;
       }
       img{
         position: absolute;
@@ -405,6 +405,99 @@ body{
     }
   }
 
+}
+#contact{
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 133, 115, 0.8) 100%,rgba(0,0,0,.6)),url(../img/contato.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode:screen;
+    
+  .heading{
+    @include heading();
+    color:$primary;
+    font-weight: bold;
+    background:rgba(220,220,220,.3);
+    border:.1rem solid rgba(220,220,220,.4);
+    margin:auto;
+    &::after{
+        width: 95vw;
+        }
+    }
+    form {
+      background:$white;
+      padding-top: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding:1rem;
+      border-radius: .5rem;
+      box-shadow: 0 0 1rem $black-p;
+
+      .inputbox{
+        text-align: center;
+        position: relative;
+
+        input,textarea {
+          outline: none;
+          padding:0 1rem;
+          height: 4rem;
+          width: 90%;
+          border-radius: .5rem;
+          border: .2rem solid $black-p;
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin:2rem 0;
+
+          &:focus ~ h2,
+          &:valid ~ h2{
+            top:-.5rem;
+            left:5.9%;
+            color:#ff3300;
+          }
+          &:focus{
+            border-color:$primary;
+          }
+        }
+       
+        textarea{
+          resize: none;
+          padding:1rem;
+          height: 20rem;
+        }
+        input[type="submit"]{
+          border:none;
+          background: $primary;
+          color:$white;
+          
+          &:hover{
+            color:$black-p;
+            background:$primary;
+          }
+        }
+        h2{
+          position: absolute;
+          top:3rem;
+          left:8%;
+        }          
+      }
+    }
+}
+/* footer */
+#footer{
+  width: 100%;
+  background: $primary;
+  h1{
+   
+    background:$primary;
+    text-align: center;
+    color:$white;
+    font-size: 1.9rem;
+    padding:2rem 0;
+    margin:0;
+
+  }
 }
 /* keyframes animação backgorund */
 

@@ -371,7 +371,7 @@ body {
 }
 #review .box-container .box:hover {
   transform: scale(110%);
-  box-shadow: 2rem 2rem 1rem 0 #00B894;
+  box-shadow: 2rem 1rem 1rem 0 #00B894;
 }
 #review .box-container .box img {
   position: absolute;
@@ -403,6 +403,109 @@ body {
 }
 #review .box-container .box:nth-child(even) {
   float: right;
+}
+
+#contact {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 133, 115, 0.8) 100%, rgba(0, 0, 0, 0.6)), url(../img/contato.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+}
+#contact .heading {
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: 2rem 0;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  /* linha */
+  color: #00B894;
+  font-weight: bold;
+  background: rgba(220, 220, 220, 0.3);
+  border: 0.1rem solid rgba(220, 220, 220, 0.4);
+  margin: auto;
+}
+#contact .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3rem;
+  width: 60%;
+  border-radius: 5rem;
+  background: rgba(0, 184, 147, 0.8);
+}
+#contact .heading::after {
+  width: 95vw;
+}
+#contact form {
+  background: #FFF;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem #333;
+}
+#contact form .inputbox {
+  text-align: center;
+  position: relative;
+}
+#contact form .inputbox input, #contact form .inputbox textarea {
+  outline: none;
+  padding: 0 1rem;
+  height: 4rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+#contact form .inputbox input:focus ~ h2, #contact form .inputbox input:valid ~ h2, #contact form .inputbox textarea:focus ~ h2, #contact form .inputbox textarea:valid ~ h2 {
+  top: -0.5rem;
+  left: 5.9%;
+  color: #ff3300;
+}
+#contact form .inputbox input:focus, #contact form .inputbox textarea:focus {
+  border-color: #00B894;
+}
+#contact form .inputbox textarea {
+  resize: none;
+  padding: 1rem;
+  height: 20rem;
+}
+#contact form .inputbox input[type=submit] {
+  border: none;
+  background: #00B894;
+  color: #FFF;
+}
+#contact form .inputbox input[type=submit]:hover {
+  color: #333;
+  background: #00B894;
+}
+#contact form .inputbox h2 {
+  position: absolute;
+  top: 3rem;
+  left: 8%;
+}
+
+/* footer */
+#footer {
+  width: 100%;
+  background: #00B894;
+}
+#footer h1 {
+  background: #00B894;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.9rem;
+  padding: 2rem 0;
+  margin: 0;
 }
 
 /* keyframes animação backgorund */
