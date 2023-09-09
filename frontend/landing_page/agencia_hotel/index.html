@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Agencia Viagem</title>
   <!-- fonte-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- google-fonte -->
@@ -14,12 +14,75 @@
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  
 />
+<!-- style Css -->
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Pagina em construção</h1>
-    
-    
+    <header>
+      <div id="menu-bars" class="fas fa-bars"></div>
+      <!-- logo -->
+      <a href="#" class="logo">Dev<span>ôo</span></a>
+      <!-- nav -->
+      <nav class="navbar"> 
+        <a href="#home">Inicio</a>
+        <a href="#home">Agende</a>
+        <a href="#pakage">Pacotes </a>
+        <a href="#service">Serviços</a>
+        <a href="#gallery">Galeria </a>
+        <a href="#review">Avaliação </a>
+        <a href="#contact">Contato</a>
+      </nav>
+      <!-- icons -->
+      <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <!-- form search -->
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Pesquise sua viagem">
+        <label for="search-bar" class="fas fa-search"> </label>
+      </form>
+    </header>
+    <!-- login form -->
+      <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="#home">
+          <h3>Entre</h3>
+          <input type="email" class="box" placeholder="Digite seu E-mail">
+          <input type="password" class="box" placeholder="Digite sua senha">
+          <input type="submit" value="Logar" class="btn">
+          <input type="checkbox" id="remenber">
+          <label for="remenber">Lembre-se</label>
+          <p>Esqueceu a senha?<a href="#"> Clique aqui </a></p>
+          <p>Não tem uma conta?<a href="#"> Crie agora</a></p>
+        </form> 
+      </div>
+    <!-- section home page -->
+    <section class="home" id="Home">
+
+      <div class="content">
+        <h3>Venha-se Aventurar</h3>
+        <p>Descubra as Maravilha do mundo,viajando com  a Devôo</p>
+        <a href="#" class="btn">Descubra mais</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="./img/video/video1.mp4"></span>
+        <span class="vid-btn" data-src="./img/video/video2.mp4"></span>
+        <span class="vid-btn" data-src="./img/video/video3.mp4"></span>
+        <span class="vid-btn" data-src="./img/video/video4.mp4"></span>
+        <span class="vid-btn" data-src="./img/video/video5.mp4"></span>
+        <span class="vid-btn" data-src="./img/video/video6.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video src="./img/video/video3.mp4" id="video-slide" loop autoplay muted></video>
+      </div>
+    </section>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
