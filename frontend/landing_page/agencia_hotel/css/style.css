@@ -32,6 +32,12 @@ html{
   scroll-padding-top: 6rem;
 }
 /* personalização */
+.star{
+  color:var(--orange);
+}
+.star:hover{
+transform: scale(1.1);
+}
 .btn{
   display: inline-block;
   margin-top:1rem;
@@ -363,7 +369,82 @@ header .search-bar-container label:hover{
   gap:2rem
 }
 .package .box-container .box{
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  overflow:hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+.package .box-container .box img{
+  height: 25rem;
+  width: 90%;
+  object-fit: cover;
+  border-radius: .5rem;
+  box-shadow: .3rem .3rem 2rem rgba(0,0,0,.5);
+}
 
+.package .box-container .box .content {
+  padding:2rem;
+}
+.package .box-container .box .content h3 {
+  font-size: 2rem;
+  color:var(--black-tp);
+}
+.package .box-container .box .content h3 i{
+padding-right:1.5rem ;
+color:var(--orange);
+}
+.package .box-container .box .content p{
+  font-size: 1.7rem;
+  color:var(--black-tp);
+  padding:1.5rem 0;
+}
+.package .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color:var(--orange);
+}
+.package .box-container .box .content .stars i:nth-child(5){
+  font-size: 1.7rem;
+  color:rgb(209, 136, 0);
+}
+.package .box-container .box .content .stars i:hover{
+  color:rgba(255, 165, 0,.5);
+  transform: scale(1.2);
+}
+.package .box-container .box .content .price{
+  font-size: 2rem;
+  color:var(--black-tp);
+  padding-top: 1rem;
+}
+.package .box-container .box .content .price span{
+  color:#666;
+  font-size: 1.5rem;
+  padding-left: 1rem ;
+}
+/* service */
+.service .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.service .box-container .box{
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  padding:1rem;
+  text-align: center;
+}
+.service .box-container .box i {
+  color:var(--orange);
+  padding: 1rem;
+  font-size: 5rem;
+}
+.service .box-container .box h3 {
+  color:var(--black-tp);
+  font-size: 2.5rem;
+}
+.service .box-container .box p {
+  color:#666;
+  font-size: 1.5rem;
 }
 /* mediq queries */
 @media (max-width:1200px){
