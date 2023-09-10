@@ -57,11 +57,42 @@ window.onscroll = () => {
 }
 /* swiper slide avaliação */
 
-let swiper = new Swiper(".review-slide", {
+var swiper = new Swiper(".review-slide", {
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2200,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3
+    },
+  },
+});
+/* brand -slide */
+var swiper = new Swiper(".brand-slide", {
   spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  }
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3
+    },
+  },
 });
