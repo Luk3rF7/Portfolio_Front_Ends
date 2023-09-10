@@ -55,3 +55,13 @@ window.onscroll = () => {
   menu.classList.remove('fa-times');
   navbar.classList.remove('active');
 }
+/* swiper slide avaliação */
+
+let swiper = new Swiper(".review-slide", {
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  }
+});
