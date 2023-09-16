@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smartColor</title>
+  <!-- style Css -->
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400;600;700&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,800&family=Nunito:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@100;400;500;600;700&family=Roboto:wght@400;500;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <!-- style Css -->
+  <link rel="stylesheet" href="./assets/css/side.css">
+  <link rel="stylesheet" href="./assets/css/card.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">
+      Produto card
+      </h1>
+  </header>
+
+    <aside>
+      <nav class="sidebar">
+        <div class="text">
+          LC Dev
+        </div>
+
+        <ul>
+          <li><a href="../../../../../../index.html">Portfolio</a></li>
+          <li>
+            <a class="web-btn" ">Projeto Web
+              <span class="fas fa-caret-down first" ></span>
+            </a>
+            <ul  class="web-show">
+              <li><a href="../card_credit/index.html" target="_blank">Formulario cred</a></li>
+              <li><a href="../color_card/cardColor.html" target="_blank">Card color background</a></li>
+              <li><a href="../product_card/card.html" target="_blank">Card Produto</a></li>
+              <li><a href="../../slider/slide.html" target="_blank">Slide</a></li>
+              <li><a href="../../Produto/index.html" target="_blank">Nike air Produto card</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../Calculadora/calculadora.html target="_blank"">Calculadora</a></li>
+          <li><a href=""target="_blank">Calculadora IMC</a></li>
+          <li><a href=""target="_blank">Formulario</a></li>
+          <li><a href=""target="_blank">Lista Tarefas</a></li>
+          <li><a href=""target="_blank">Login</a></li>
+         
+        </ul>
+      </nav>
+    </aside>
+    
+    <main>
+      <div class="box-container">
+
+        <div class="box">
+  
+          <div class="image-container">
+  
+            <div class="big-image">
+              <img src="./img/relogio-1.jpg" alt="img principal">
+            </div>
+            
+            <!-- img pequena -->
+            <div class="small-image">
+              <img class="active" src="./img/relogio-1.jpg" alt="img principal">
+              <img src="./img/relogio-2.jpg" alt="img principal">
+              <img src="./img/relogio-3.jpg" alt="img principal">
+            </div>
+          </div>
+            <!-- conteudo -->
+  
+            <div class="content">
+              <h3 class="title">Relogio masculino</h3>
+              <div class="price"> R$:750,00</div>
+              <p>Rélogio masculino</p>
+  
+              <form action="">
+  
+                <div class="dropDown">
+  
+                  <span>Tamanho : </span>
+                  <select name="" id="">
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Medio</option>
+                    <option value="Grande">Grande</option>
+                    <option value="extra Grande">Extra Grande</option>
+                  </select>
+  
+                  <span>Cor : </span>
+                  <select name="" id="">
+                    <option value="Ouro branco">Ouro Branco</option>
+                    <option value="Dourado preto">Dourado Preto</option>
+                    <option value="Couro Dourado">Couro Dourado</option>
+                  </select>
+                  
+                </div>
+  
+                <div class="quantity">
+                  <span>Quantidade:</span>
+                  <input type="number" value="1">
+                </div>
+                  
+              </form>
+  
+              <a href="#">
+                <button class="btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  Adicione carrinho
+                </button>
+              </a>
+  
+              <span class="stock">
+                <i class="fas fa-check"></i>
+                Estoque
+              </span>
+  
+              <div class="share">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+              </div>
+  
+            </div>
+        </div>
+      </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/card.js"></script>
+</body>
+</html>

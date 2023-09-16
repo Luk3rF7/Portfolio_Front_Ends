@@ -1,0 +1,188 @@
+:root{
+  --color-text:#d43f8d;
+  --color-black:#000;
+  --color-white:#fff;
+  --color-light:#d3d3d3;
+  --color-btn: linear-gradient(35deg,#fc7777 40%,#d3d3d3  55%);
+  --border-1:1px solid red;
+  --border-2:1px solid blue;
+}
+.container{
+  width: 450px;
+  border:1px solid rgba(212, 63, 141,.6);
+  background:var(--color-white);
+  border-radius: 8px;
+  text-align: center;
+  margin:50px 50px 100px 450px;
+  padding:50px 35px 10px 35px;
+  transition: all .3s ease-in;
+  cursor: pointer;
+}
+.container:hover{
+  border: 1px solid var(--color-black);
+  box-shadow: 1.5rem 1rem 0 .2rem rgba(0,0,0,.2);
+}
+
+.container .header{
+  font-size:55px;
+  letter-spacing:6px;
+  font-weight: 600;
+  margin:0 0 30px 0;
+  color: var(--color-text);
+  font-family: 'Lobster';
+  border-bottom:4px solid var(--color-text) ;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-size: 18px;
+  font-weight: 500;
+  color:var(--color-black);
+  margin-bottom: 8px;
+}
+.container .progress-bar .step  .bullet{
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  position: relative;
+  text-align: center;
+  border: 2px solid var(--color-black);
+}
+.container .progress-bar .step:last-child  .bullet:before,
+.container .progress-bar .step:last-child  .bullet:after{
+  display: none;
+}
+
+.container .progress-bar .step  .bullet:before,
+.container .progress-bar .step  .bullet:after{
+  position: absolute;
+  bottom: 11px;
+  right: -65px;
+  content:'';
+  height:4px;
+  width: 60px;
+  background-color: var(--color-black);
+}
+.container .progress-bar .step  .bullet:after{
+  background:var(--color-text);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate .3s linear forwards;
+}
+@keyframes animate{
+  100%{
+    transform: scaleX(1);
+  }
+}
+.container .progress-bar .step  span{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .progress-bar .step  .check{
+  position: absolute;
+  left:50%;
+  top:70%;
+  font-size: 15px;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-outer form {
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Exo 2';
+}
+.form-outer form .page .field {
+  height: 45px;
+  width: 350px;
+  margin:45px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+.form-outer form .page .field .label{
+  position: absolute;
+  top:-30px;
+}
+.form-outer form .page .field label,
+.form-outer form .page .field input{
+  width: 100%;
+  height:100%;
+
+  border: 2px solid var(--color-light);
+  outline: none;
+  border-radius: 5px;
+}
+.form-outer form .page .field input:focus{
+  border: 2px solid var(--color-text);
+}
+.form-outer form .page .field button{
+  width: 50%;
+  height: calc(100% + 5px);
+  margin-top:-20px;
+  border:1px solid var(--color-text);
+  border-radius: 2rem;
+  background:var(--color-text);
+  color:var(--color-white);
+  font-family: 'Nunito';
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3 ease;
+}
+
+.form-outer form .page .field button:hover{
+  border: var(--color-text) 2px solid ;
+  background: var(--color-white);
+  color:var(--color-text);
+}
+.form-outer form .page .field .btns{
+  margin-top: -20px !important;
+}
+.form-outer form .page .field .btns button .prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+.form-outer form .page .field .btns button .next{
+  margin-left: 3px;
+}
+
+.form .page .filed select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 2px solid var(--color-light);
+}

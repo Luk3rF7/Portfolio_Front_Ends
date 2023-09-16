@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto web</title>
+    <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400;600;700&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,800&family=Nunito:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@100;400;500;600;700&family=Roboto:wght@400;500;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+</head>
+<body>
+  <header>
+    <h1 class="title">
+       Formulario Etapas
+      </h1>
+      <!-- <a href="#"></a> -->
+  </header>
+
+    <aside>
+      <nav class="sidebar">
+        <div class="text">
+          Web dev
+        </div>
+
+        <ul>
+          <li><a href="./projeto.html">Inicio</a></li>
+          <li>
+            <a class="web-btn" ">Projeto Web
+              <span class="fas fa-caret-down first" ></span>
+            </a>
+            <ul  class="web-show">
+              <li><a href="./projeto/elem/card/card_credit/index.html">Form Card</a></li>
+              <li><a href="./projeto/elem/card/color_card/cardColor.html">Card Color</a></li>
+              <li><a href="./projeto/elem/card/product_card/card.html">Card Produto</a></li>
+              <li><a href="./projeto/elem/slider/slide.html">Slide</a></li>
+              <li><a href="./projeto/elem/Produto/index.html">Nike air card</a></li>
+            </ul>
+          </li>
+          <li><a href="../Calculadora_imc/imc.html">Calculadora IMC</a></li>
+          <li><a href="./formulario.html">Formulario</a></li>
+          <li><a href="../">Lista Tarefas</a></li>
+          <li><a href="../">Login</a></li>
+          <li><a href="">Eleme Web</a></li>
+          <li><a href="../../../../index.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <div class="container">
+        <div class="header">Inscreva-se</div>
+        <div class="progress-bar">
+          <div class="step">
+            <p>Nome</p>
+            <div class="bullet">
+              <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="step">
+            <p>Contato</p>
+            <div class="bullet">
+              <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="step">
+            <p>Data</p>
+            <div class="bullet">
+              <span>3</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="step">
+            <p>Login</p>
+            <div class="bullet">
+              <span>4</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+        </div>
+        <div class="form-outer">
+          <form>
+          <!-- page 1 -->
+          <div class="page slidepage">
+              <!-- title -->
+            <div class="title">Informação basica</div>
+            <!-- compos  -->
+
+              <div class="field">
+                <div class="label">Nome:</div>
+                <input type="text">
+              </div>
+
+              <div class="field">
+                <div class="label">Sobrenome:</div>
+                <input type="text">
+              </div>
+
+              <div class="field nextBtn">
+                <button> Proximo</button>
+              </div>
+              
+          </div>
+          <!-- page 2 -->
+          <div class="page">
+              <!-- title -->
+            <div class="title">Informação Contato</div>
+              <!-- compos  -->
+              
+              <div class="field">
+                <div class="label">E-mail:</div>
+                <input type="email">
+              </div>
+
+              <div class="field">
+                <div class="label">Celular</div>
+                <input type="number">
+              </div>
+
+              <div class="field btns">
+                <button class="prev-1 prev">Anterior</button>
+                <button class="next-1 next">Proximo</button>
+              </div>
+              
+            </div>
+            <!-- page 3 -->
+            <div class="page">
+              <!-- title -->
+              <div class="title">Data Nascimento</div>
+              <!-- compos  -->
+
+              <div class="field">
+                <div class="label">Data</div>
+                <input type="text">
+              </div>
+
+              <div class="field">
+                <div class="label">Gênero</div>
+                <select >
+                  <option>Homem</option>
+                  <option>Mulher</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+
+              <div class="field btns">
+                <button class="prev-2 prev">Anterior</button>
+                <button class="next-2 next">Proximo</button>
+              </div>
+              
+              
+            </div>
+          <!-- page 4 -->
+          <div class="page">
+              <!-- title -->
+            <div class="title">Registro login</div>
+              <!-- compos  -->
+              
+              <div class="field">
+                <div class="label">Nome Úsuario</div>
+                <input type="text">
+              </div>
+
+              <div class="field">
+                <div class="label">Password:</div>
+                <input type="password">
+              </div>
+
+              <div class="field btns">
+                <button class="prev-3 prev">Anterior</button>
+                <button class="submit">Enviar</button>
+              </div>
+              
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    </main>
+
+
+<!-- script cdnj jquery e js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
+
+    
