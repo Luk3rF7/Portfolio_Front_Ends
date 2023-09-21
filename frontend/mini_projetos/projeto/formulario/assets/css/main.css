@@ -213,8 +213,8 @@
   left:120%;
   top:  12%;
   background:var(--color-white);
-  color: var(--color-green);
-  box-shadow: 0 .2rem .1rem rgba(0,0,0,.2);
+  color: var(--color-text);
+  box-shadow: .4rem .2rem .1rem var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;

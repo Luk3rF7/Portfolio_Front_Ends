@@ -3,8 +3,7 @@
   border:.1rem solid #cbced1;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 13px 13px 20px #cbced1,
-      -13px -13px 20px #ffffff;
+  background: #fff;
 }
 
 .content {
@@ -20,7 +19,7 @@
   width: 60px;
   height: 30px;
   font-size: 16px;
-  border: none;
+  border:1px solid rgba(16, 16, 16, .3);
   outline: none;
   margin: 5px;
   border-radius: 4px;
@@ -28,6 +27,7 @@
   box-shadow: 5px 5px 8px #00000020,
       -5px -5px 8px #ffff;
       color:#000;
+  cursor: pointer;
 }
 
 .row button:hover {
