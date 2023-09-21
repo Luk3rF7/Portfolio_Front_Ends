@@ -4,6 +4,7 @@
   --color-black:#000;
   --color-white:#fdfdfd;
   --color-border:#ccc;
+  --color-green:rgba(74, 234, 79,.5);
 }
 input,
 select {
@@ -11,12 +12,20 @@ select {
 }
 /* container */
 .container {
-  max-width: 450px;
-  height: 85%;
-  border-radius: 2rem;
+  max-width: 750px;
+  max-height: 600px;
   margin:1rem auto;
   background:var(--color-white);
   padding:1.5rem;
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+ background: #102f5e;
+ width: 4px;
+ border: 2rem;
+}
+.container::-webkit-scrollbar-corner{
+  display: none;
 }
 /* todo header */
 .container .header-todo {
@@ -27,7 +36,8 @@ select {
 /* todo form */
 #todo-form,#edit-form{
   padding:1rem;
-  border: 1px solid var(--color-border);
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
 }
 
 #todo-form p,
@@ -39,24 +49,31 @@ select {
   display: flex;
 }
 .form-control input{
+  width: 90%;
   margin-right: .3rem;
 }
 #cancel-edit-btn{
   margin-top: 1rem;
 }
 /* toolbar */
-#toolbar{
-  padding:1rem;
+.toolbar{
+  /* padding:1rem; */
   border-bottom:1px solid var(--color-border);
   display: flex;
 }
-#toolbar h4 {
+.toolbar h4 {
   margin-bottom:.5rem;
+}
+#todo-list{
+  margin-top: 1rem;
+  border-radius: 2rem;
+  border:1px solid var(--color-lg-blue)
 }
 #search{
   border-right:1px solid #DDD;
   padding-right: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   width:65%;
   display:flex;
   flex-direction: column;
@@ -68,14 +85,15 @@ select {
   width: 100%;
   margin-right: .3rem;
 }
-#filter{
+.fa-delete-left {
+  width: 40px;
+}
+.filter{
   width:35%;
   display:flex;
   flex-direction:column;
 }
-#filter select{
-  flex:1;
-}
+
 /* to do list */
 .todo {
   display:flex;
@@ -87,19 +105,21 @@ select {
 }
 .todo h3{
   flex:1;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 .todo button {
   margin-left:.4rem;
 }
 
 .done{
-  background-color: var(--color-lg-blue);
+  background-color: var(--color-green);
+  border:2px solid #a4Ea4f;
 }
 .done h3 {
-  color:var(--color-white);
+  color:var(--color-blue);
   text-decoration: line-through;
-  font-style: italic;
+  letter-spacing: 2px;
+ 
 }
 /* todo edit */
 .hide{
