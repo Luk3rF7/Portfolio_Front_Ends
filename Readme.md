@@ -18,6 +18,6 @@
   <li> JavaScript
   </ul>
   <p>
-    Link para site <a href="https://luk3rf7.github.io/Portfolio_Frontends/"> Click here
+    Link para site <a href="https://luk3rf7.github.io/Portfolio_Front_Ends/"> Click here
   </p>
 </div>
